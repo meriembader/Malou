@@ -1,0 +1,24 @@
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { NzAggregatePipe } from './nz-aggregate.pipe';
+import { NzBytesPipe } from './nz-bytes.pipe';
+import { NzToCssUnitPipe } from './nz-css-unit.pipe';
+import { NzEllipsisPipe } from './nz-ellipsis.pipe';
+import { NzSafeNullPipe } from './nz-safe-null.pipe';
+import { NzSanitizerPipe } from './nz-sanitizer.pipe';
+import { NzTrimPipe } from './nz-trim.pipe';
+const pipes = [NzToCssUnitPipe, NzSafeNullPipe, NzSanitizerPipe, NzTrimPipe, NzBytesPipe, NzAggregatePipe, NzEllipsisPipe];
+export class NzPipesModule {
+}
+NzPipesModule.decorators = [
+    { type: NgModule, args: [{
+                imports: [CommonModule],
+                exports: [pipes],
+                declarations: [pipes]
+            },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotcGlwZXMubW9kdWxlLmpzIiwic291cmNlUm9vdCI6Ii9ob21lL3ZzdHMvd29yay8xL3MvY29tcG9uZW50cy9waXBlcy8iLCJzb3VyY2VzIjpbIm56LXBpcGVzLm1vZHVsZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7O0dBR0c7QUFFSCxPQUFPLEVBQUUsWUFBWSxFQUFFLE1BQU0saUJBQWlCLENBQUM7QUFDL0MsT0FBTyxFQUFFLFFBQVEsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUV6QyxPQUFPLEVBQUUsZUFBZSxFQUFFLE1BQU0scUJBQXFCLENBQUM7QUFDdEQsT0FBTyxFQUFFLFdBQVcsRUFBRSxNQUFNLGlCQUFpQixDQUFDO0FBQzlDLE9BQU8sRUFBRSxlQUFlLEVBQUUsTUFBTSxvQkFBb0IsQ0FBQztBQUNyRCxPQUFPLEVBQUUsY0FBYyxFQUFFLE1BQU0sb0JBQW9CLENBQUM7QUFDcEQsT0FBTyxFQUFFLGNBQWMsRUFBRSxNQUFNLHFCQUFxQixDQUFDO0FBQ3JELE9BQU8sRUFBRSxlQUFlLEVBQUUsTUFBTSxxQkFBcUIsQ0FBQztBQUN0RCxPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sZ0JBQWdCLENBQUM7QUFFNUMsTUFBTSxLQUFLLEdBQUcsQ0FBQyxlQUFlLEVBQUUsY0FBYyxFQUFFLGVBQWUsRUFBRSxVQUFVLEVBQUUsV0FBVyxFQUFFLGVBQWUsRUFBRSxjQUFjLENBQUMsQ0FBQztBQU8zSCxNQUFNLE9BQU8sYUFBYTs7O1lBTHpCLFFBQVEsU0FBQztnQkFDUixPQUFPLEVBQUUsQ0FBQyxZQUFZLENBQUM7Z0JBQ3ZCLE9BQU8sRUFBRSxDQUFDLEtBQUssQ0FBQztnQkFDaEIsWUFBWSxFQUFFLENBQUMsS0FBSyxDQUFDO2FBQ3RCIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBVc2Ugb2YgdGhpcyBzb3VyY2UgY29kZSBpcyBnb3Zlcm5lZCBieSBhbiBNSVQtc3R5bGUgbGljZW5zZSB0aGF0IGNhbiBiZVxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXG4gKi9cblxuaW1wb3J0IHsgQ29tbW9uTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29tbW9uJztcbmltcG9ydCB7IE5nTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5cbmltcG9ydCB7IE56QWdncmVnYXRlUGlwZSB9IGZyb20gJy4vbnotYWdncmVnYXRlLnBpcGUnO1xuaW1wb3J0IHsgTnpCeXRlc1BpcGUgfSBmcm9tICcuL256LWJ5dGVzLnBpcGUnO1xuaW1wb3J0IHsgTnpUb0Nzc1VuaXRQaXBlIH0gZnJvbSAnLi9uei1jc3MtdW5pdC5waXBlJztcbmltcG9ydCB7IE56RWxsaXBzaXNQaXBlIH0gZnJvbSAnLi9uei1lbGxpcHNpcy5waXBlJztcbmltcG9ydCB7IE56U2FmZU51bGxQaXBlIH0gZnJvbSAnLi9uei1zYWZlLW51bGwucGlwZSc7XG5pbXBvcnQgeyBOelNhbml0aXplclBpcGUgfSBmcm9tICcuL256LXNhbml0aXplci5waXBlJztcbmltcG9ydCB7IE56VHJpbVBpcGUgfSBmcm9tICcuL256LXRyaW0ucGlwZSc7XG5cbmNvbnN0IHBpcGVzID0gW056VG9Dc3NVbml0UGlwZSwgTnpTYWZlTnVsbFBpcGUsIE56U2FuaXRpemVyUGlwZSwgTnpUcmltUGlwZSwgTnpCeXRlc1BpcGUsIE56QWdncmVnYXRlUGlwZSwgTnpFbGxpcHNpc1BpcGVdO1xuXG5ATmdNb2R1bGUoe1xuICBpbXBvcnRzOiBbQ29tbW9uTW9kdWxlXSxcbiAgZXhwb3J0czogW3BpcGVzXSxcbiAgZGVjbGFyYXRpb25zOiBbcGlwZXNdXG59KVxuZXhwb3J0IGNsYXNzIE56UGlwZXNNb2R1bGUge31cbiJdfQ==

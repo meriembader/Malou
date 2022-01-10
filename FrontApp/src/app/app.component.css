@@ -1,0 +1,19 @@
+nz-content {
+  padding: 0 50px;
+}
+
+nz-footer {
+  text-align: center;
+}
+
+.inner-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 280px;
+}
+.ant-layout-header{
+  background: rgba(250, 206, 85, 1);
+}
+.ant-layout-footer{
+  background: rgba(25, 35, 80, 1);
+}
