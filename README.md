@@ -8,15 +8,15 @@ Les principales fonctionnalités sont donc:
   - Affichage d'un pie chart montrant la répartition du nombre de produits par catégorie.
 ## Cloner le repo
 ```sh
-$ git clone https://github.com/sindasalem/ProductHunt_Project.git
-$ cd ProductHunt_Project
+$ git clone https://github.com/meriembader/Malou.git
+$ cd Malou
 ```
 ## Partie Backend
 * Technologie: [node.js]
 * Call Rest API ProductHunt
 ### Installation & start
 ```sh
-$ cd project-backend
+$ cd BackApp
 $ npm install
 $ npm run dev
 ```
@@ -27,7 +27,7 @@ Serveur Backend lancé sur le port 3000
 * Affichage d'un pie chart montrant la répartition du nombre de produits par catégorie(topic) (Les dix premières catégories ayant le plus de produits )
 ### Installation & start
 ```sh
-$ cd project-frontend
+$ cd FrontApp
 $ npm install
 $ ng serve
 ```
