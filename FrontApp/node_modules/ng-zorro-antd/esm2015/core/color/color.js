@@ -1,0 +1,28 @@
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+export const presetColors = [
+    'pink',
+    'red',
+    'yellow',
+    'orange',
+    'cyan',
+    'green',
+    'blue',
+    'purple',
+    'geekblue',
+    'magenta',
+    'volcano',
+    'gold',
+    'lime'
+];
+export function isPresetColor(color) {
+    return presetColors.indexOf(color) !== -1;
+}
+// export const presetStatusColors = ['success', 'processing', 'error', 'default', 'warning'];
+// export type NzPresetStatusColor = typeof presetStatusColors[number];
+// export function isPresetStatusColor(color: string): color is NzPresetStatusColor {
+//   return presetStatusColors.indexOf(color as NzSafeAny) !== -1;
+// }
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29sb3IuanMiLCJzb3VyY2VSb290IjoiL2hvbWUvdnN0cy93b3JrLzEvcy9jb21wb25lbnRzL2NvcmUvY29sb3IvIiwic291cmNlcyI6WyJjb2xvci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7O0dBR0c7QUFJSCxNQUFNLENBQUMsTUFBTSxZQUFZLEdBQUc7SUFDMUIsTUFBTTtJQUNOLEtBQUs7SUFDTCxRQUFRO0lBQ1IsUUFBUTtJQUNSLE1BQU07SUFDTixPQUFPO0lBQ1AsTUFBTTtJQUNOLFFBQVE7SUFDUixVQUFVO0lBQ1YsU0FBUztJQUNULFNBQVM7SUFDVCxNQUFNO0lBQ04sTUFBTTtDQUNFLENBQUM7QUFJWCxNQUFNLFVBQVUsYUFBYSxDQUFDLEtBQWE7SUFDekMsT0FBTyxZQUFZLENBQUMsT0FBTyxDQUFDLEtBQWtCLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQztBQUN6RCxDQUFDO0FBRUQsOEZBQThGO0FBRTlGLHVFQUF1RTtBQUV2RSxxRkFBcUY7QUFDckYsa0VBQWtFO0FBQ2xFLElBQUkiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXG4gKiBmb3VuZCBpbiB0aGUgTElDRU5TRSBmaWxlIGF0IGh0dHBzOi8vZ2l0aHViLmNvbS9ORy1aT1JSTy9uZy16b3Jyby1hbnRkL2Jsb2IvbWFzdGVyL0xJQ0VOU0VcbiAqL1xuXG5pbXBvcnQgeyBOelNhZmVBbnkgfSBmcm9tICduZy16b3Jyby1hbnRkL2NvcmUvdHlwZXMnO1xuXG5leHBvcnQgY29uc3QgcHJlc2V0Q29sb3JzID0gW1xuICAncGluaycsXG4gICdyZWQnLFxuICAneWVsbG93JyxcbiAgJ29yYW5nZScsXG4gICdjeWFuJyxcbiAgJ2dyZWVuJyxcbiAgJ2JsdWUnLFxuICAncHVycGxlJyxcbiAgJ2dlZWtibHVlJyxcbiAgJ21hZ2VudGEnLFxuICAndm9sY2FubycsXG4gICdnb2xkJyxcbiAgJ2xpbWUnXG5dIGFzIGNvbnN0O1xuXG5leHBvcnQgdHlwZSBOelByZXNldENvbG9yID0gdHlwZW9mIHByZXNldENvbG9yc1tudW1iZXJdO1xuXG5leHBvcnQgZnVuY3Rpb24gaXNQcmVzZXRDb2xvcihjb2xvcjogc3RyaW5nKTogY29sb3IgaXMgTnpQcmVzZXRDb2xvciB7XG4gIHJldHVybiBwcmVzZXRDb2xvcnMuaW5kZXhPZihjb2xvciBhcyBOelNhZmVBbnkpICE9PSAtMTtcbn1cblxuLy8gZXhwb3J0IGNvbnN0IHByZXNldFN0YXR1c0NvbG9ycyA9IFsnc3VjY2VzcycsICdwcm9jZXNzaW5nJywgJ2Vycm9yJywgJ2RlZmF1bHQnLCAnd2FybmluZyddO1xuXG4vLyBleHBvcnQgdHlwZSBOelByZXNldFN0YXR1c0NvbG9yID0gdHlwZW9mIHByZXNldFN0YXR1c0NvbG9yc1tudW1iZXJdO1xuXG4vLyBleHBvcnQgZnVuY3Rpb24gaXNQcmVzZXRTdGF0dXNDb2xvcihjb2xvcjogc3RyaW5nKTogY29sb3IgaXMgTnpQcmVzZXRTdGF0dXNDb2xvciB7XG4vLyAgIHJldHVybiBwcmVzZXRTdGF0dXNDb2xvcnMuaW5kZXhPZihjb2xvciBhcyBOelNhZmVBbnkpICE9PSAtMTtcbi8vIH1cbiJdfQ==
