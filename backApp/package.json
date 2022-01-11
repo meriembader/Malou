@@ -13,7 +13,7 @@
     "ProductHuntAPI",
     "CallExternalAPI"
   ],
-  "author": "Sinda SALEM",
+  "author": "Meriem BADER ",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.0",
