@@ -8,9 +8,9 @@ describe('ProductCategoryChartComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProductCategoryChartComponent ],
-      imports: [HttpClientTestingModule], 
-      providers:[DatePipe]
+      declarations: [ProductCategoryChartComponent],
+      imports: [HttpClientTestingModule],
+      providers: [DatePipe]
     })
     .compileComponents();
   });

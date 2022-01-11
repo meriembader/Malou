@@ -56,7 +56,7 @@ registerLocaleData(en);
     ChartsModule
 
   ],
-  providers: [DatePipe,{ provide: NZ_I18N, useValue: en_US }],
+  providers: [DatePipe, { provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

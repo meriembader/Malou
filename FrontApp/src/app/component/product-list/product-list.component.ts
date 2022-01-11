@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, SimpleChanges} from '@angular/core';
+import {Component, Input, OnInit, SimpleChanges, OnChanges} from '@angular/core';
 import {ApiCallService} from '../../service/api-call.service';
 import {Product} from '../../model/product.model';
 import { NgxSpinnerService } from 'ngx-spinner';
@@ -9,7 +9,7 @@ import {DatePipe} from '@angular/common';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent implements OnInit {
+export class ProductListComponent implements OnInit, OnChanges{
   public products: Product[];
   @Input() public date: any;
   public page = 1;
@@ -37,7 +37,8 @@ export class ProductListComponent implements OnInit {
     this.spinner.show();
     this.apiCallService.getPostByDay(this.date).then((data: any) => {
       this.products = data.map((product: any) => {
-        return new Product(product.id, product.name, product.tagline, product.product_state, product.thumbnail.image_url, product.comments_count, product.votes_count, product.topics);
+        return new Product(product.id, product.name, product.tagline, product.product_state, product.thumbnail.image_url,
+          product.comments_count, product.votes_count, product.topics);
 
       });
       this.total = this.products.length;

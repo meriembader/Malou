@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, SimpleChanges} from '@angular/core';
+import {Component, Input, OnInit, SimpleChanges, OnChanges} from '@angular/core';
 import {ChartOptions, ChartType} from 'chart.js';
 import {Label} from 'ng2-charts';
 import {Product} from '../../model/product.model';
@@ -11,7 +11,21 @@ import {ApiCallService} from '../../service/api-call.service';
   templateUrl: './product-category-chart.component.html',
   styleUrls: ['./product-category-chart.component.css']
 })
-export class ProductCategoryChartComponent implements  OnInit {
+export class ProductCategoryChartComponent implements  OnInit, OnChanges {
+  pieChartOptions: ChartOptions = {
+    responsive: true,
+    legend: {
+      position: 'top',
+    },
+    tooltips: {
+      enabled: true,
+      mode: 'single',
+      callbacks: {
+        label: (tooltipItems, data) => data.datasets[0].data[tooltipItems.index] + ' %'
+      }
+    },
+  };
+
   @Input() public date: any;
   topics = new Map();
   pieChartLabels: Label[] = [];
@@ -49,23 +63,6 @@ export class ProductCategoryChartComponent implements  OnInit {
     this.getProductsByCategory();
   }
 
-  pieChartOptions: ChartOptions = {
-    responsive: true,
-    legend: {
-      position: 'top',
-    },
-    tooltips: {
-      enabled: true,
-      mode: 'single',
-      callbacks: {
-        label: function (tooltipItems, data) {
-          return data.datasets[0].data[tooltipItems.index] + ' %';
-        }
-      }
-    },
-  };
-
-
   getProductsByCategory(): void{
     this.spinner.show();
     this.apiCallService.getPostByDay(this.date).then((data: any) => {
@@ -89,16 +86,18 @@ export class ProductCategoryChartComponent implements  OnInit {
 
       }
       this.topics = new Map([...this.topics.entries()].sort((a, b) => b[1] - a[1]));
-        let labels: Label[] = [];
-        let data: number[] = [];
-        this.topics.forEach((value: number, key: string) => {
-          labels.push(key);
-          data.push(value);
-        });
-        labels = labels.slice(0, 9);
-        data = data.slice(0, 9);
-        this.pieChartLabels = labels;
-        this.pieChartData = data;
+
+      let data: number[] = [];
+      let labels: Label[] = [];
+      this.topics.forEach((value: number, key: string) => {
+
+        labels.push(key);
+        data.push(value);
+      });
+      labels = labels.slice(0, 9);
+      data = data.slice(0, 9);
+      this.pieChartLabels = labels;
+      this.pieChartData = data;
     }
     });
   }
