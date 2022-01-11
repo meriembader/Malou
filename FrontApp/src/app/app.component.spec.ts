@@ -8,8 +8,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
-      imports: [HttpClientModule], 
-      providers:[DatePipe]
+      imports: [HttpClientModule],
+      providers: [DatePipe]
     }).compileComponents();
   });
 

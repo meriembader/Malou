@@ -32,6 +32,6 @@ export class AppComponent {
   disabledDate = (current: Date): boolean => {
     // Can not select days after today and today
     return differenceInCalendarDays(Date.now(), current) < 0 || current < new Date(2016, 0, 1);
-  };
+  }
 
 }

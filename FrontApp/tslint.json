@@ -10,6 +10,8 @@
         "statements"
       ]
     },
+    "no-shadowed-variable": false,
+    "object-literal-shorthand": false,
     "array-type": false,
     "arrow-return-shorthand": true,
     "curly": true,
@@ -83,7 +85,7 @@
       }
     },
     "typedef": [
-      true,
+      false,
       "call-signature"
     ],
     "typedef-whitespace": {

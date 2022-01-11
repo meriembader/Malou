@@ -11,8 +11,8 @@ describe('ProductListComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ ProductListComponent ],
-      imports: [HttpClientTestingModule, NgxPaginationModule], 
-      providers:[DatePipe]
+      imports: [HttpClientTestingModule, NgxPaginationModule],
+      providers: [DatePipe]
     })
     .compileComponents();
   });
