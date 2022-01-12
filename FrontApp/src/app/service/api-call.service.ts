@@ -8,14 +8,10 @@ const headers = new HttpHeaders().set('Access-Control-Allow-Origin', '*');
   providedIn: 'root'
 })
 
-
-
 export class ApiCallService {
   constructor(private httpclient: HttpClient){ }
 
   getPostByDay(day) {
     return this.httpclient.get(environment.apiURL + 'postsByDay?day=' + day, {headers}).toPromise();
   }
-  
 }
-
