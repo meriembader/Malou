@@ -26,6 +26,9 @@
     "unirest": "^0.6.0"
   },
   "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
     "install": "^0.13.0",
     "nodemon": "^2.0.6"
   }

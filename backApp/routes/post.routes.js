@@ -1,13 +1,12 @@
-var  api =require( "../api");
+const express = require('express');
+const api = require('../api');
 
-var express = require("express");
-
-var router = express.Router();
+const router = express.Router();
 
 /* Get Posts of a given Day */
-router.get("/postsByDay", async function (req, res) {
+router.get('/postsByDay', async function (req, res) {
   const reponse = await api.getPosts(req.query.day).catch();
-    res.send(reponse.data.posts);
+  res.send(reponse.data.posts);
 });
 
 module.exports = router;
