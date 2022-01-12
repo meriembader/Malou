@@ -26,8 +26,6 @@ export class AppComponent {
   }
 
   onPanelChange(change: { date: Date; mode: string }): void {
-    console.log(`Current value: ${change.date}`);
-    console.log(`Current mode: ${change.mode}`);
   }
   disabledDate = (current: Date): boolean => {
     // Can not select days after today and today
